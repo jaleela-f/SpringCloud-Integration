@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/SpringBootExample/src/main/java/com/test/plugin/ConjurClient.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="CONJUR_ACCOUNT" value="myConjurAccount"/>
+        <mapEntry key="CONJUR_APPLIANCE_URL" value="https://localhost:8443"/>
+        <mapEntry key="CONJUR_AUTHN_LOGIN" value="host/jenkins-frontend/NG-JALEELA-R"/>
+        <mapEntry key="CONJUR_AUTHN_TOKEN_FILE" value="/Users/jaleela.faizurrahman/Documents/conjur.txt"/>
+        <mapEntry key="CONJUR_CERT_FILE" value=" /Users/Jaleela.FaizurRahman/conjur-quickstart/conf/policy/conjur.der"/>
+        <mapEntry key="CONJUR_SSL_CERTIFICATE" value="-----BEGIN CERTIFICATE-----&#10;MIIDcjCCAlqgAwIBAgIJAPHPFW3qSye/MA0GCSqGSIb3DQEBCwUAMGUxCzAJBgNV&#10;BAYTAlVTMRIwEAYDVQQIDAlXaXNjb25zaW4xEDAOBgNVBAcMB01hZGlzb24xETAP&#10;BgNVBAoMCEN5YmVyQXJrMQ0wCwYDVQQLDARPbnl4MQ4wDAYDVQQDDAVwcm94eTAe&#10;Fw0yMjAzMjgwODUzMjFaFw0yMzAzMjgwODUzMjFaMGUxCzAJBgNVBAYTAlVTMRIw&#10;EAYDVQQIDAlXaXNjb25zaW4xEDAOBgNVBAcMB01hZGlzb24xETAPBgNVBAoMCEN5&#10;YmVyQXJrMQ0wCwYDVQQLDARPbnl4MQ4wDAYDVQQDDAVwcm94eTCCASIwDQYJKoZI&#10;hvcNAQEBBQADggEPADCCAQoCggEBALgWVZB9QEp3LR1vRuRE51IxZpbWNa79Ysho&#10;tXJSlRuCnk2spT3ydsH+XWOc/mR6AwtL6WaLy3yNGExqKJt8847zmAZwKl8uIjJG&#10;SzM+3LbUl/XvRewOBmwwWdZfR40mjuhzOIJFARhQZiI7/P/2IUdjvGnQwZol+z3T&#10;TXRuDnwKUNRHJGdoI8BUgAu1786JeXfgfzlavxwEUej3oeVyoIaIMwBHwN3D80Qi&#10;lig3MTbGrTXU8Rjw0UBfYWcTl15kIO/cO0QeRxxgQsGKynEX9OWg4KMkXoA4bI/G&#10;xjNTIBIQoLLCa3c7ZWGMBgP8a5GMLUYTH/ep7ysSB0r6FNutxXcCAwEAAaMlMCMw&#10;IQYDVR0RBBowGIIJbG9jYWxob3N0ggVwcm94eYcEfwAAATANBgkqhkiG9w0BAQsF&#10;AAOCAQEAj946hac7EBtPeHvEcFtdbdmH49elgKnY8LNCEqsT36V0A2qnS8T/6eWp&#10;bop4FZFijnCujHwuLGGwD2UrjzUvn7I9q/EvxRFaKeWCYeSvjevhncu6gLPoV46Z&#10;Jboxn70Iof1XL7QmB6IocK8Jo2geknlez/s/K3Xm531bJvJGM1XO7HVJ1tm3MzUL&#10;qxMhi5Ek5g1JBqpUtMTKmic4Esg9YcSOuQ5YlfcAup8tvCiamKf7hihif+sAQ4b+&#10;5V84q/B1fAE+NgmltmgS8wodqpfVIFAJURPr9/XjKUKzVr9+LV3G2PNoNe+JA1FK&#10;E1TrJg62exXFdT/vNaOPSAR1EY20jg==&#10;-----END CERTIFICATE-----"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.test.plugin.ConjurClient"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="SpringBootExample"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SpringBootExample"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--illegal-access=permit&#10;--add-opens java.base/java.util=ALL-UNNAMED&#10;--add-opens java.base/java.lang.reflect=ALL-UNNAMED&#10;--add-opens java.base/java.text=ALL-UNNAMED&#10;--add-opens java.desktop/java.awt.font=ALL-UNNAMED&#10;--add-opens java.base/java.net=ALL-UNNAMED&#10;--add-opens java.base/java.lang=ALL-UNNAMED"/>
+</launchConfiguration>

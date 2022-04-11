@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Spring-boot-conjur"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="CONJUR_ACCOUNT" value="dev"/>
+        <mapEntry key="CONJUR_APPLIANCE_URL" value="https://proxy"/>
+        <mapEntry key="CONJUR_AUTHN_API_KEY" value="$admin_api_key"/>
+        <mapEntry key="CONJUR_AUTHN_LOGIN" value="admin"/>
+        <mapEntry key="CONJUR_AUTHN_TOKEN_FILE" value="/api_key"/>
+        <mapEntry key="CONJUR_CERT_FILE" value="/conjur-dev.pem"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="groovyjarjarasm.asm.util.ASMifier"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Spring-boot-conjur"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Spring-boot-conjur"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+</launchConfiguration>

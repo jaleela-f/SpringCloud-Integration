@@ -1,0 +1,81 @@
+package com.springcloud.configserver;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cyberark.conjur.springboot.annotations.ConjurPropertySource;
+import com.cyberark.conjur.springboot.annotations.ConjurValue;
+import com.cyberark.conjur.springboot.annotations.ConjurValues;
+
+
+@RestController
+@ConjurPropertySource(value = { "jenkins-app/" })
+public class ConfigProperty {
+	
+	
+	@Value("${msg:Config Server is not working. Please check...}")
+	  private String msg;
+	 
+	  @GetMapping("/msg")
+	  public String getMsg() {
+	    return this.msg;
+	  }
+	
+
+	@Value("${CONJUR_ACCOUNT}")
+	private String conjurAccount;
+
+	@Value("${CONJUR_APPLIANCE_URL}")
+	private String conjurApplianceUrl;
+
+	@Value("${CONJUR_AUTHN_LOGIN:}")
+	private String conjurAuthLogin;
+
+    @Value("${CONJUR_AUTHN_API_KEY}")
+	private String conjurAuthAPIKey;
+	
+	@Value("${CONJUR_CERT_FILE}")
+	private String conjurAuthSSLCert;
+
+	@Value("${CONJUR_SSL_CERTIFICATE}")
+	private String conjurAuthCert;
+	
+	@Value("${dbuserName}")
+	private byte[] pass1;
+
+	@Value("${dbpassWord}")
+	private byte[] pass2;
+
+	@Value("${key}")
+	private byte[] pass3;
+
+	@ConjurValue(key = "jenkins-app/key")
+	private byte[] customVal;
+
+	@ConjurValues(keys = { "jenkins-app/dbuserName", "jenkins-app/dbpassWord" })
+	private byte[] keys;
+	
+	
+	@GetMapping("/conjurAccount")
+	public String getConjurAccount() {
+		System.out.println(">>>conjurAccount");
+		return conjurAccount;
+	}
+	
+
+	public String getConjurApplianceUrl() {
+		return conjurApplianceUrl;
+	}
+
+	public String getConjurAuthLogin() {
+		return conjurAuthLogin;
+	}
+
+	
+	
+	
+	
+
+	
+}

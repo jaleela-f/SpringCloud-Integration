@@ -1,0 +1,38 @@
+
+r
+java:S34575"AFormat specifiers should be used instead of string concatenation.( æÿªøÿÿÿÿH»RMAJORZ
+CODE_SMELL
+ˆ
+java:S26291"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(û¯ÉíH¼RMAJORZ
+CODE_SMELL
+™
+java:S11921"jDefine a constant instead of duplicating this literal "By Using Standard Spring annotation -->  " 3 times.(û¯ÉíH½RCRITICALZ
+CODE_SMELL
+m
+java:S34573"AFormat specifiers should be used instead of string concatenation.(þ•ÃžHÁRMAJORZ
+CODE_SMELL
+ˆ
+java:S26293"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(þ•ÃžHÂRMAJORZ
+CODE_SMELL
+m
+java:S3457/"AFormat specifiers should be used instead of string concatenation.(Ê™ê±HÃRMAJORZ
+CODE_SMELL
+ˆ
+java:S2629/"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Ê™ê±HÄRMAJORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(ýÜ£ØHÅRMAJORZ
+CODE_SMELL
+
+java:S26295"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.( æÿªøÿÿÿÿHÆRMAJORZ
+CODE_SMELL
+
+java:S26292"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÞÚÿšþÿÿÿÿHÇRMAJORZ
+CODE_SMELL
+r
+java:S34572"AFormat specifiers should be used instead of string concatenation.(ÞÚÿšþÿÿÿÿHÈRMAJORZ
+CODE_SMELL
+m
+java:S34571"AFormat specifiers should be used instead of string concatenation.(û¯ÉíHÉRMAJORZ
+CODE_SMELL
+l	java:S125."<This block of commented-out lines of code should be removed.(ÓÕÝàùÿÿÿÿHÊRMAJORZ
+CODE_SMELL

@@ -1,0 +1,43 @@
+package com.springcloud.configserver;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import org.springframework.core.env.Environment;
+
+import com.cyberark.conjur.springboot.annotations.Registrar;
+
+
+
+@SpringBootApplication
+
+public class ConjurServerClient {
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(ConjurServerClient.class, args);
+
+	}
+
+	@Autowired
+	public void setEnv(Environment e) {
+
+		
+		System.out.println("Environment variable set");
+		//System.out.println(">>>>>" + e.getProperty("msg"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_ACCOUNT"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_APPLIANCE_URL"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_AUTHN_LOGIN"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_AUTHN_API_KEY"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_CERT_FILE"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_SSL_CERTIFICATE"));
+		Registrar reg = new Registrar();
+		reg.setEnvironment(e);
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+package com.springcloud.configserver;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import org.springframework.core.env.Environment;
+
+import com.cyberark.conjur.springboot.annotations.ConjurPropertySource;
+import com.cyberark.conjur.springboot.annotations.ConjurValue;
+import com.cyberark.conjur.springboot.annotations.ConjurValues;
+
+@SpringBootApplication
+@ConjurPropertySource(value = { "jenkins-app/" })
+public class ConjurServerClient {
+
+	@Value("${dbuserName}")
+	private byte[] pass1;
+
+	@Value("${dbpassWord}")
+	private byte[] pass2;
+
+	@Value("${key}")
+	private byte[] pass3;
+
+	@ConjurValue(key = "jenkins-app/key")
+	private byte[] customVal;
+
+	@ConjurValues(keys = { "jenkins-app/dbuserName", "jenkins-app/dbpassWord" })
+	private byte[] keys;
+
+	public static void main(String[] args) {
+		SpringApplication.run(ConjurServerClient.class, args);
+	}
+
+	@Autowired
+	public void setEnv(Environment e) {
+		System.out.println(">>>>>" + e.getProperty("msg"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_ACCOUNT"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_APPLIANCE_URL"));
+		System.out.println(">>>>>" + e.getProperty("CONJUR_AUTHN_LOGIN"));
+		// logger.info("By Using Standard Spring annotation --> " + new String(pass) + "
+		// " );
+		System.out.println("By Using Custom annotation -->" + new String(customVal));
+
+		System.out.println("By Using Standard Spring annotation -->  " + new String(pass1) + "  ");
+		System.out.println("By Using Standard Spring annotation -->  " + new String(pass2) + "  ");
+		System.out.println("By Using Standard Spring annotation -->  " + new String(pass3) + "  ");
+
+		System.out.println("By Using Custom annotation for multiple retrieval -->" + new String(keys));
+	}
+
+}

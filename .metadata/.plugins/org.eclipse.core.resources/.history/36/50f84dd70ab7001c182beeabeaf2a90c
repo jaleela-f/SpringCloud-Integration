@@ -1,0 +1,5 @@
+package com.springcloud.configserver;
+
+public class ConjurSecrets {
+
+}
